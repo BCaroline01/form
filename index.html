@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <fieldset>
+        <legend>Formulaire</legend>
+        <form action="data.php" method="post" class="form">
+                <div>
+                    <label for="Lastname">Entrez votre nom de famille: </label>
+                    <input type="text"  name="Lastname" id="Lastname" />
+                </div>
+                <div>
+                    <label for="Firstname">Entrez votre prénom: </label>
+                    <input type="text"  name="Firstname" id="Firstname" />
+                </div>
+                <div>
+                    <label for="DOB">Entrez votre date de naissance: </label>
+                    <input type="date" name="DOB" id="DOB" />
+                </div>
+                <fieldset class="checkbox">
+                    <legend>Veuillez sélectionner vos intérêts :</legend> 
+                    <div>
+                        <input type="checkbox" id="coding" name="interest[]" value="coding">
+                        <label for="coding">Développement web</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="music" name="interest[]" value="music">
+                        <label for="music">Musique</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="sports" name="interest[]" value="sports">
+                        <label for="sports">Sports</label>
+                      </div>
+                </fieldset>   
+                <input type="submit" name="submit" id="submit" value="Enregistrer">
+        </form>        
+    </fieldset>
+</body>
+</html>

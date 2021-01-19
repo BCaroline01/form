@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background: url(image_background.jpg) center no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+fieldset {
+    width: 400px;
+    height: 350px;
+    line-height: 30px;
+    padding: 20px;
+    background-color:#f8f4e5;
+    border : none;
+}
+
+div{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content:center;
+}
+
+legend {
+    color: #f45702;
+    font-weight:bold;
+    font-size: large;
+}
+
+label{
+    color: #2a293edc;
+}
+
+input{
+    color: #f45702;
+    background-color:#f8f4e5;
+    border: none;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 2px;
+    padding: 5px;
+}
+
+input[type=submit]{
+    display: block;
+    float: right;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #f45702;
+    color: white;
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+input[type=submit]:hover{
+    background: inherit;
+    color: #f45702;
+    border-bottom: 2px solid #f45702;
+
+}
+
+fieldset.checkbox{
+    padding: 10px 0 0 0;
+    height: 150px;
+}
+
+fieldset.checkbox > legend{
+    color: #2a293edc;
+    font-size: 15px ;
+}
+
